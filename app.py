@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 
 # Load the trained model
-model = joblib.load('fraud_detection_model.pkl')
+model = joblib.load(r'fraud_detection_model.pkl')
 
 app = Flask(__name__)
 
