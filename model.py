@@ -23,8 +23,8 @@ data = pd.get_dummies(data, drop_first=True)
 
 print(data.columns) 
 
-X = data.drop("fraud_reported", axis=1) 
-y = data['fraud_reported']  
+X = data.drop("fraud_reported_Y", axis=1) 
+y = data['fraud_reported_Y']  
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
